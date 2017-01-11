@@ -1,0 +1,11 @@
+<h1> Edit Page</h1>
+
+<form action="/haikus/<%=haiku._id%>" method="post">
+  <label for="title">Name:</label>
+  <input id="title" type="text" name="title" value="<%=haiku.title%>"/>
+
+  <label for="body">Body:</label>
+  <textarea id="body" name="body" rows="8" cols="80" ><%=haiku.body%></textarea>
+
+  <button type="submit">Update Haiku</button>
+</form>

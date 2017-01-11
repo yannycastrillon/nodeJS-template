@@ -1,0 +1,8 @@
+<h1> <%= title %> </h1>
+<ul>
+  <% haikus.forEach((h)=>{ %>
+    <li> Name: <a href="/haikus/<%=h._id%>"> <%= h.title%></a>
+      <a href="/haikus/<%=h._id%>/edit">Edit</a>
+    </li>
+  <% }) %>
+</ul>
